@@ -13,4 +13,4 @@ RUN apk add --update --no-cache \
   git \
   jq
 
-RUN npm install --global versionist@6.6.1
+RUN npm install --global versionist@6.6.2
