@@ -1,9 +1,16 @@
-FROM node:lts
+#
+## Arguments
+#
+ARG NODE_VERSION=16.13.1-alpine
+
+#
+## Container
+#
+FROM node:${NODE_VERSION}
 
 # Install dependencies
-RUN apt update && apt install -y \
+RUN apk add --update --no-cache \
   git \
-  jq \
-  && rm -rf /var/lib/apt/lists/*
+  jq
 
-RUN npm install --global versionist@6.5.1
+RUN npm install --global versionist@6.6.0
