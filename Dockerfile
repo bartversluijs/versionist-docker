@@ -1,7 +1,7 @@
 #
 ## Arguments
 #
-ARG NODE_VERSION=16.13.1-alpine
+ARG NODE_VERSION=16.17.1-alpine
 
 #
 ## Container
