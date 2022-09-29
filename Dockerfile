@@ -1,7 +1,7 @@
 #
 ## Arguments
 #
-ARG NODE_VERSION=16.13.1-alpine
+ARG NODE_VERSION=16.17.1-alpine
 
 #
 ## Container
@@ -13,4 +13,4 @@ RUN apk add --update --no-cache \
   git \
   jq
 
-RUN npm install --global versionist@6.6.3
+RUN npm install --global versionist@6.6.4
